@@ -1,0 +1,23 @@
+{
+  "name": "miniblog",
+  "version": "1.0.0",
+  "description": "Proyecto Integrador Api Rest DevSpark",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitolen21-star/miniblog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitolen21-star/miniblog/issues"
+  },
+  "homepage": "https://github.com/mitolen21-star/miniblog#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
