@@ -44,7 +44,7 @@ describe("Pruebas de la API de Autores", () => {
   // });
 
 
-
+  // Tener en cuenta que debe poner un ID existente para que salga PASS
   it("Debería obtener un autor específico por su ID", async () => {
   
   const response = await request(app).get("/autores/1");
@@ -63,9 +63,8 @@ describe("Pruebas de la API de Autores", () => {
   //   expect(response.status).toBe(200);
   // });
 
-
+ // Tener en cuenta que debe poner un ID existente para que salga PASS
   it("Debería eliminar un autor (DELETE)", async () => {
-   
     const response = await request(app).delete("/autores/20");
     expect(response.status).toBe(200);
   });

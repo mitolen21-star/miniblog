@@ -139,8 +139,14 @@ Interactuar con la API: No necesitas Postman. Con el servidor encendido, abre tu
 
 Tests: npm run test
 
-## 8. 📚 Documentación Swagger
+
+La API se encuentra desplegada en Railway: 
+👉 https://mini-blogg.up.railway.app/api-docs/
+
+
+## 8. 📚 Documentación Swagger:
     📸 Captura Swagger
+
 
 ### Obtener todos los comments:
 
