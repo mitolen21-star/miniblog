@@ -1,0 +1,227 @@
+openapi: 3.0.0
+info:
+  title: MiniBlog API
+  version: 1.0.0
+  description: Documentación completa del proyecto MiniBlog
+
+paths:
+  /autores:
+    get:
+      summary: Lista todos los autores
+      responses:
+        "200":
+          description: Éxito
+    post:
+      summary: Crea un nuevo autor
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+      responses:
+        "201":
+          description: Autor creado
+
+  /autores/{id}:
+    get:
+      summary: Muestra el detalle de un solo autor
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Éxito
+    put:
+      summary: Actualiza un autor existente
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                bio:
+                  type: string
+      responses:
+        "200":
+          description: Autor actualizado exitosamente
+    delete:
+      summary: Elimina un autor
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Autor eliminado
+
+  /posts:
+    get:
+      summary: Lista todos los posts
+      responses:
+        "200":
+          description: Éxito
+    post:
+      summary: Crea un nuevo post
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                content:
+                  type: string
+                author_id:
+                  type: integer
+                published:
+                  type: boolean
+      responses:
+        "201":
+          description: Post creado
+
+  /posts/{id}:
+    get:
+      summary: Muestra el detalle de un solo post
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Éxito
+    put:
+      summary: Actualiza un post existente
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                content:
+                  type: string
+                author_id:
+                  type: integer
+                published:
+                  type: boolean
+      responses:
+        "200":
+          description: Post actualizado
+    delete:
+      summary: Elimina un post
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Post eliminado
+
+  /comments:
+    get:
+      summary: Lista todos los comentarios
+      responses:
+        "200":
+          description: Éxito
+    post:
+      summary: Crea un nuevo comentario
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                content:
+                  type: string
+                post_id:
+                  type: integer
+                author_id:
+                  type: integer
+      responses:
+        "201":
+          description: Comentario creado
+
+  /comments/{id}:
+    get:
+      summary: Muestra el detalle de un solo comentario
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Éxito
+    put:
+      summary: Actualiza un comentario existente
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                content:
+                  type: string
+                post_id:
+                  type: integer
+                author_id:
+                  type: integer
+      responses:
+        "200":
+          description: Comentario actualizado
+    delete:
+      summary: Elimina un comentario
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Comentario eliminado
