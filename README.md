@@ -1,4 +1,4 @@
-Proyecto Integrador Api Rest DevSpark
+# Proyecto Integrador Api Rest DevSpark
 
 # Documentación - 📔MiniBlog API
 
@@ -7,20 +7,18 @@ Proyecto Integrador Api Rest DevSpark
 
 1. 📖 Descripción General
 2. 🛠️ Tecnologías y Herramientas
-3. 🗂️ Estructura del Proyecto
+3. 🌳 Estructura del Proyecto
 4. 📁 Explicación de Carpetas
-5. 📁 Explicación de Archivos
+5. 📄 Explicación de Archivos
 6. 🚀 Instalación y Configuración
-7. ▶️ Cómo ejecutar
+7. ▶️ Ejecución y Pruebas
 8. 📚 Documentación Swagger
-    📸 Captura de Swagger
-9. 🧪 Pruebas
-    📸 Captura de los tests pasando
-10. ☁️ Despliegue en Railway
-11. 🤖 Uso de IA
+   📸 Captura de Swagger
+9. ☁️ Despliegue en Railway
+10. 🤖 Uso de IA
 
 
-## 1. 📝 Descripción general
+## 1. 📖 Descripción general
 
 Miniblog API REST es una aplicación backend desarrollada con Node.js, Express y PostgreSQL para almacenamiento de información.
 
@@ -70,7 +68,7 @@ API RESTful para la gestión de un blog, permitiendo el control de autores, publ
 📂 tests/- Pruebas automatizadas con supertest
 
 
-## 5. 📁 Explicación de archivos
+## 5. 📄 Explicación de archivos
 
 📁 db/index.js - Lee las variables de entorno, crea la     conexión con postgresql y la exporta para su utilización.
 
@@ -116,14 +114,13 @@ API RESTful para la gestión de un blog, permitiendo el control de autores, publ
 
 📦 package.js - Paquete del proyecto y sus dependencias.
 
-📖 README.md - Documentación o guía del proyecto
+📄 README.md - Documentación o guía del proyecto
 
 
 ## 6. 🚀 Instalación y Configuración
 
 1. **Clonar el proyecto:** Descarga los archivos en tu máquina local.
 2. **Instalar dependencias:** Abre la terminal en la raíz del proyecto y ejecuta: _npm install_
-
 3. **Variables de Entorno:** Crea un archivo llamado .env en la raíz y define los datos de tu base de datos:
 
 DB_USER=tu_usuario
@@ -143,41 +140,32 @@ Interactuar con la API: No necesitas Postman. Con el servidor encendido, abre tu
 Tests: npm run test
 
 ## 8. 📚 Documentación Swagger
-    📸 Captura de Swagger
+    📸 Captura Swagger
 
-Obtener todos los comments:
+### Obtener todos los comments:
 
-![alt text](getComments.png)
-
-
-Obtener un comments por ID:
-
-![alt text](getCommentsId.png)
+![Obtener todos los comments](docs/imagenes/getComments.png)
 
 
-Actualizar autores por ID:
+### Obtener un comments por ID:
 
-![alt text](putAutoresId2.png)
-
-Crear un posts:
-
-![alt text](postPost1.png)
+![Obtener un comment por ID](docs/imagenes/getCommentsId.png)
 
 
-## 9. 🧪 Pruebas
-    📸 Captura de los tests pasando
+### Actualizar autores por ID:
 
-    
+![Actualizar autores por ID](docs/imagenes/putAutoresId2.png)
 
-    
+### Crear un posts:
+
+![Crear un post](docs/imagenes/postPost1.png)
 
 
-# 10. ☁️ Despliegue en Railway
-
+# 9. ☁️ Despliegue en Railway
 
 Configura las Variables de Entorno (DB_USER, DB_PASSWORD, etc.) en el panel de control de tu servicio en Railway y vincula tu repositorio. Railway detectará automáticamente el despliegue.
 
 
-# 11. 🤖 Uso de IA
+# 10. 🤖 Uso de IA
 
 Este proyecto fue desarrollado con asistencia de IA (Gemini y chatgpt) para el diseño de la arquitectura de la API, definición del esquema de base de datos, lógica de controladores y depuración técnica.
