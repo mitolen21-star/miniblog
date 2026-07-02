@@ -24,7 +24,7 @@ describe("Pruebas de la API de Comentarios", () => {
   });
 
   it("Debería obtener un comentario específico por su ID", async () => {
-    const response = await request(app).get("/comments/1");
+    const response = await request(app).get("/comments/11");
     expect(response.status).toBe(200);
     expect(response.body).toHaveProperty("content");
   });
