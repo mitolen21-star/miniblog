@@ -144,21 +144,29 @@ Tests: npm run test
 
 ### Obtener todos los comments:
 
-![Obtener todos los comments](docs/imagenes/getComments.png)
+![<p align="center">
+  <img src="docs/imagenes/getComments.png" width="650">
+</p>](docs/imagenes/getComments.png)
 
 
 ### Obtener un comments por ID:
 
-![Obtener un comment por ID](docs/imagenes/getCommentsId.png)
+<p align="center">
+  <img src="docs/imagenes/getCommentsId.png" width="650">
+</p>
 
 
 ### Actualizar autores por ID:
 
-![Actualizar autores por ID](docs/imagenes/putAutoresId2.png)
+<p align="center">
+  <img src="docs/imagenes/putAutoresId2.png" width="650">
+</p>
 
 ### Crear un posts:
 
-![Crear un post](docs/imagenes/postPost1.png)
+<p align="center">
+  <img src="docs/imagenes/postPost1.png" width="650">
+</p>
 
 
 # 9. ☁️ Despliegue en Railway
