@@ -144,10 +144,9 @@ Tests: npm run test
 
 ### Obtener todos los comments:
 
-![<p align="center">
+<p align="center">
   <img src="docs/imagenes/getComments.png" width="650">
-</p>](docs/imagenes/getComments.png)
-
+</p>
 
 ### Obtener un comments por ID:
 
